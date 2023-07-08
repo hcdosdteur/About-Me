@@ -1,3 +1,3 @@
 export const Walk = () => {
-	return <h1>Walk</h1>;
+	return <>Walk</>;
 };

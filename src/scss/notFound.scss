@@ -1,0 +1,47 @@
+.wrapper {
+	user-select: none;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+
+	.error {
+		width: 35rem;
+		height: 35rem;
+		filter: invert(1);
+	}
+
+	.errorCode {
+		position: relative;
+		span {
+			position: relative;
+			top: -3rem;
+			font-size: 8rem;
+		}
+	}
+
+	.message {
+		font-size: 1.2rem;
+		margin-bottom: 6rem;
+	}
+
+	.btn {
+		font-size: 2rem;
+		background-color: rgba(255, 255, 255, 0.2);
+		color: #fff;
+		border-radius: 50rem;
+		padding: 0.7em 2em;
+		margin-bottom: 10rem;
+		box-shadow: 0 1rem 7rem 0.1rem rgba(255, 255, 255, 0.5), inset 0.7rem 2.6rem 0 0 #000000;
+		font-weight: 900;
+		transition: all 300ms ease;
+		cursor: pointer;
+	}
+
+	.btn:hover {
+		background-color: #fff;
+		color: #000;
+		-webkit-transform: translateY(-12px);
+		transform: translateY(-12px);
+		box-shadow: 0 0.5rem 7rem 0.5rem rgba(255, 255, 255, 0.7), inset 0 0 0 0.3rem #000;
+	}
+}

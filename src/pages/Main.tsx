@@ -1,5 +1,9 @@
 import '@css/Main.scss';
 
 export const Main = () => {
-	return <div>Main</div>;
+	return (
+		<>
+			<header></header>
+		</>
+	);
 };
