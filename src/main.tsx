@@ -10,7 +10,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<Header />
-			{/* <div style={{ position: 'relative', top: '6rem' }}> */}
 			<Routes>
 				<Route path="/" element={<Main />} />
 				<Route path="/404" element={<NotFound />} />
@@ -20,7 +19,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 				<Route path="/scroll" element={<Scroll />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
-			{/* </div> */}
 		</BrowserRouter>
 	</React.StrictMode>
 );
