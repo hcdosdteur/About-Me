@@ -15,14 +15,13 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
-		"baseUrl": ".",
+		"baseUrl": "./",
 		"paths": {
 			"@/*": ["./src/*"],
-			"#/*": ["./*"],
-			"@components/*": ["./src/components/*"],
-			"@css/*": ["./src/scss/*"]
-		}
+			"#/*": ["./*"]
+		},
+		"types": ["vite-plugin-svgr/client"]
 	},
-	"include": ["src", "src/.tsx"],
+	"include": ["src", "./**/*"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

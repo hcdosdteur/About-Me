@@ -1,5 +1,6 @@
 import React from 'react';
-import s from '@css/svg.module.scss';
+
+import style from './index.module.scss';
 
 const SVG: React.FC<{
 	src: string;
@@ -8,8 +9,12 @@ const SVG: React.FC<{
 	rec?: number;
 }> = ({ src, width, height, rec }) => {
 	return (
-		<div className={s.img}>
-			<img style={{ width: `${rec ? rec : width}rem`, height: `${rec ? rec : height}rem` }} src={src} alt="" />
+		<div className={style.img}>
+			<img
+				style={{ width: `${rec ? rec : width}rem`, height: `${rec ? rec : height}rem` }}
+				src={src}
+				alt=""
+			/>
 		</div>
 	);
 };

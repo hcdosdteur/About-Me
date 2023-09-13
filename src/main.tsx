@@ -1,10 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import '@css/index.scss';
+
+import ReactDOM from 'react-dom/client';
+
+import '@/style/index.scss';
+import { Loading, Main, Menu, NotFound, Scroll, Walk } from '@/pages';
+
+import Header from '@/components/navigate';
+
 import '@/assets/Pretendard/index.css';
-import Header from '@/components/NavBar/Nav';
-import { NotFound, Walk, Menu, Scroll, Loading, Main } from '@/pages';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>

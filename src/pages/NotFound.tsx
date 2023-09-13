@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
-import s from '@css/notFound.module.scss';
+
+import s from '@/style/notFound.module.scss';
 
 export const NotFound = () => {
 	return (
 		<div id="wrapper" className={s.wrapper}>
-			<img className={s.error} src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404" />
+			<img
+				className={s.error}
+				src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg"
+				alt="404"
+			/>
 			<div className={s.errorCode}>
 				<span>ERROR 404</span>
 			</div>
