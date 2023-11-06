@@ -1,103 +1,95 @@
-@import 'color';
-
 .wrapper {
+	width: 100vw;
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
 
-	.contents {
+	.container {
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		width: 100%;
-		max-width: $maxWidth + 4rem;
-		padding: 0 4rem;
+		max-width: 148rem;
+		padding: 0 20rem;
 
-		.photo {
-			width: 13rem;
-			height: 13rem;
-			border-radius: 50%;
-			background-color: $grade1;
+		.profile {
+			* {
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			.logo {
+				margin-bottom: 7.5rem;
+			}
+
+			.info {
+				display: flex;
+				flex-direction: column;
+				gap: 0.8rem;
+				width: 100%;
+				max-width: 38.5rem;
+
+				.pro {
+					font-size: 3rem;
+					opacity: 0.8;
+					border-radius: 1rem;
+				}
+
+				.name {
+					position: relative;
+					display: flex;
+					gap: 1.5rem;
+
+					.en {
+						font-size: 4.8rem;
+						font-weight: 800;
+					}
+
+					.ko {
+						font-size: 2.4rem;
+						opacity: 0.5;
+						height: fit-content;
+						padding-top: 2.6rem;
+					}
+				}
+
+				.hashtag {
+					display: flex;
+					flex-wrap: wrap;
+					// max-width: 30rem;
+					opacity: 0.6;
+					gap: 0.5rem 1rem;
+
+					span {
+						font-size: 2.4rem;
+					}
+				}
+			}
+
+			.link {
+				display: flex;
+				margin-top: 12rem;
+				margin-bottom: 4.6rem;
+				gap: 1.5rem;
+
+				.platform {
+					display: flex;
+					align-items: center;
+					gap: 0.8rem;
+
+					span {
+						font-size: 2rem;
+					}
+				}
+			}
 		}
 
-		.info {
+		.cardpack {
 			display: flex;
-			flex-direction: column;
-			gap: 0.8rem;
-
-			.pro {
-				font-size: 2rem;
-				opacity: 0.8;
-				border-radius: 1rem;
-			}
-			.name {
-				font-size: 4rem;
-				bottom: 0;
-			}
-			.hashtag {
-				display: flex;
-				flex-wrap: wrap;
-				max-width: 30rem;
-				font-size: 1rem;
-				font-weight: 400;
-				margin-top: 0.5rem;
-				opacity: 0.5;
-				gap: 0.4rem 1rem;
-			}
+			position: relative;
+			align-items: center;
+			width: 46rem;
+			height: 72.5rem;
 		}
 	}
 }
-
-// @font-face {
-// 	font-family: 'Tmon';
-// 	font-weight: normal;
-// 	font-style: normal;
-// 	src: url('https://cdn.jsdelivr.net/gh/webfontworld/tmon/Tmon.eot');
-// 	src: url('https://cdn.jsdelivr.net/gh/webfontworld/tmon/Tmon.eot?#iefix')
-// 			format('embedded-opentype'),
-// 		url('https://cdn.jsdelivr.net/gh/webfontworld/tmon/Tmon.woff2') format('woff2'),
-// 		url('https://cdn.jsdelivr.net/gh/webfontworld/tmon/Tmon.woff') format('woff'),
-// 		url('https://cdn.jsdelivr.net/gh/webfontworld/tmon/Tmon.ttf') format('truetype');
-// 	font-display: swap;
-// }
-// body {
-// 	background-color: #e3f2fd;
-// }
-// svg {
-// 	font-family: 'Pretendard';
-// 	position: absolute;
-// 	text-transform: uppercase;
-// 	animation: stroke 5s 1 alternate;
-// 	fill: rgba(72, 138, 204, 1);
-// 	text {
-// 		font-size: 10rem;
-// 	}
-// }
-// @keyframes stroke {
-// 	0% {
-// 		stroke-dashoffset: 25%;
-// 		stroke-dasharray: 0 50%;
-// 		fill: rgba(72, 138, 204, 0);
-// 		stroke: rgba(54, 95, 160, 1);
-// 		stroke-width: 2;
-// 	}
-// 	70% {
-// 		fill: rgba(72, 138, 204, 0);
-// 		stroke: rgba(54, 95, 160, 1);
-// 	}
-// 	80% {
-// 		fill: rgba(72, 138, 204, 0);
-// 		stroke: rgba(54, 95, 160, 1);
-// 	}
-// 	100% {
-// 		stroke-dashoffset: -25%;
-// 		stroke-dasharray: 50% 0;
-// 		fill: rgba(72, 138, 204, 1);
-// 		stroke: rgba(54, 95, 160, 0);
-// 		stroke-width: 0;
-// 	}
-// }
-
-// <svg viewBox="0 0 300 300" width="50rem" height="15rem">
-// <text x="50%" y="50%" textAnchor="middle" alignmentBaseline="middle">
-//   webstoryboy
-// </text>
-// </svg>

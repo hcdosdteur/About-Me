@@ -58,18 +58,28 @@
 						"position": "before"
 					},
 					{
-						"pattern": "@/style/*",
-						"group": "internal",
+						"pattern": "#/*",
+						"group": "external",
 						"position": "after"
 					},
 					{
-						"pattern": "@/components/*",
-						"group": "internal",
+						"pattern": "@src/context/*",
+						"group": "parent",
 						"position": "after"
 					},
 					{
-						"pattern": "@/assets/*",
-						"group": "internal",
+						"pattern": "@src/component/*",
+						"group": "parent",
+						"position": "after"
+					},
+					{
+						"pattern": "@src/assets/*",
+						"group": "parent",
+						"position": "after"
+					},
+					{
+						"pattern": "@src/style/*",
+						"group": "parent",
 						"position": "after"
 					}
 				],

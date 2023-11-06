@@ -13,6 +13,13 @@ export default defineConfig({
 			usePolling: true,
 		},
 	},
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: '@import "@/style/color.scss";',
+			},
+		},
+	},
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),

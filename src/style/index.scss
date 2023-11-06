@@ -1,21 +1,19 @@
-@import 'color';
-
 :root {
 	font-size: 10px;
 }
 
 * {
 	color: #fff;
-	font-family: Pretendard;
+	font-family: SUIT;
 	font-size: 1.6rem;
 	font-weight: 700;
 	box-sizing: border-box;
-	letter-spacing: -0.01em;
+	letter-spacing: -0.02em;
 	line-height: 100% * 1.5;
 }
 
 body {
-	background-color: $backColor;
+	background-color: $base;
 	margin: 0;
 }
 

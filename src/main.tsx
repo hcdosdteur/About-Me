@@ -3,17 +3,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import ReactDOM from 'react-dom/client';
 
-import '@/style/index.scss';
+// import Header from '@/components/navigate';
 import { Loading, Main, Menu, NotFound, Scroll, Walk } from '@/pages';
 
-import Header from '@/components/navigate';
-
-import '@/assets/Pretendard/index.css';
+import '@/assets/SUIT/SUIT.css';
+import '@/style/index.scss';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<Header />
+			{/* <Header /> */}
 			<Routes>
 				<Route path="/" element={<Main />} />
 				<Route path="/404" element={<NotFound />} />
