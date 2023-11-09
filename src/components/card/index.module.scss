@@ -4,28 +4,36 @@ $card3rotate: rotate(9.15deg) translate(5rem, 0);
 
 .card {
 	display: flex;
-	position: absolute;
 	width: 41rem;
 	height: 65rem;
 	padding: 2.4rem;
 	align-items: center;
-	box-shadow: rgba(0, 0, 0, 0.25) 0 1.4rem 2.8rem, rgba(0, 0, 0, 0.22) 0 1rem 1rem;
 	border-radius: 0.5rem;
 	gap: 3.2rem;
+	background-color: gray;
 }
 
-.card1 {
+.card0 {
 	z-index: 3;
 	background-color: $grade1;
-	transform: $card1rotate;
+	transform: $card1rotate !important;
 }
-.card2 {
+.card1 {
 	z-index: 2;
 	background-color: $grade2;
-	transform: $card2rotate;
+	transform: $card2rotate !important;
 }
-.card3 {
+.card2 {
 	z-index: 1;
 	background-color: $grade3;
-	transform: $card3rotate;
+	transform: $card3rotate !important;
 }
+.shadow {
+	box-shadow:
+		rgba(0, 0, 0, 0.25) 0 1.4rem 2.8rem,
+		rgba(0, 0, 0, 0.22) 0 1rem 1rem !important;
+}
+.absolute {
+	position: absolute;
+}
+// .card:not(.card1)

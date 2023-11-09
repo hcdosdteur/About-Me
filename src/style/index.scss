@@ -12,6 +12,10 @@
 	line-height: 100% * 1.5;
 }
 
+*::-webkit-scrollbar {
+	display: none;
+}
+
 body {
 	background-color: $base;
 	margin: 0;
